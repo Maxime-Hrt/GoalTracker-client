@@ -25,3 +25,6 @@ dist-ssr
 
 # Tailwind output
 style/output.css
+
+# Env
+.env
