@@ -1,20 +1,21 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
-import About from "./pages/About"
 import Login from "./pages/Login"
 import Register from "./pages/Register.tsx";
-import TryToken from "./pages/TryToken.tsx";
+import ForgotPassword from "./pages/ForgotPassword.tsx";
+import NotFound from "./pages/NotFound.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
 
 function App() {
   return (
     <Router>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login />} />
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/login"} element={<Login />} />
             <Route path={"/register"} element={<Register />} />
-            <Route path={"/try-token"} element={<TryToken />} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path={"/forgot-password"} element={<ForgotPassword />} />
+            <Route path={"/dashboard"} element={<Dashboard />} />
+            <Route path={"*"} element={<NotFound />} />
         </Routes>
     </Router>
   )
