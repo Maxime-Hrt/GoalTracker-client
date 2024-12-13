@@ -99,7 +99,9 @@ export default function Register() {
                         </button>
                     </div>
                 </div>
-                <div className={"w-1/3 hidden bg-amber-500 items-center lg:flex justify-center italic"}>Image preview</div>
+                <div className={"w-1/3 hidden items-center lg:flex justify-center italic"}>
+                    <img className={"w-full"} alt={"goal"} src={"/20943996.png"}/>
+                </div>
             </div>
         </Layout>
     )

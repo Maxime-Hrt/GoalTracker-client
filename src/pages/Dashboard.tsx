@@ -101,7 +101,7 @@ const Dashboard = () => {
                         <div className={"text-white flex flex-col"}>
                             <span className={"font-knewave-regular text-6xl mb-4 pl-2"}>G</span>
                             <span onClick={() => setDisplayGoalCreation(true)} className={"h-10 hover:rounded-md flex gap-x-1 items-center pl-2 hover:bg-gray-400"}><CiSquarePlus className={"text-xl"}/><p>New Task</p></span>
-                            <span className={"h-10 hover:rounded-md flex gap-x-1 items-center pl-2 hover:bg-gray-400"}><CiAlignLeft className={"text-xl"}/><p>Statistics</p></span>
+                            <a href={"/statistics"} className={"h-10 hover:rounded-md flex gap-x-1 items-center pl-2 hover:bg-gray-400"}><CiAlignLeft className={"text-xl"}/><p>Statistics</p></a>
                             <span className={"h-10 hover:rounded-md flex gap-x-1 items-center pl-2 hover:bg-gray-400"}><CiSettings className={"text-xl"}/><p>Settings</p></span>
                         </div>
                         <span onClick={onLogout} className={"bg-white text-black p-2 rounded-full hover:bg-gray-200 duration-300"}>Logout</span>

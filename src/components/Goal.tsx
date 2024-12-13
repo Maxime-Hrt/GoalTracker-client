@@ -267,7 +267,7 @@ const Goal = (props: GoalProps) => {
 
     return (
         <div
-            className={"w-[800px] p-4 rounded-md absolute flex flex-col top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-gray-700 text-gray-100"}
+            className={"w-[800px] max-h-[800px] overflow-y-scroll p-4 rounded-md absolute flex flex-col top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-gray-700 text-gray-100"}
         >
             <span
                 onClick={() => setDisplayGoal(false)}
@@ -388,7 +388,7 @@ const Goal = (props: GoalProps) => {
             <div className={"mt-4 flex gap-x-3"}>
                 <input
                     onKeyDown={(e) => {
-                        if (e.key === "Enter") {
+                        if (e.key === "Enter" && addTaskInput.trim() !== "") {
                             addTask()
                         }
                     }}
